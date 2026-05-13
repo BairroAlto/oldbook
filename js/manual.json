@@ -1,0 +1,377 @@
+{
+  "plataforma_gestao_conhecimento": {
+    "aba_navegadora": [
+      {
+        "item": "Note",
+        "funcao": "criação de conteúdo"
+      },
+      {
+        "item": "Lists",
+        "funcao": "navegação entre conteudos"
+      },
+      {
+        "item": "Book",
+        "funcao": "página externa de visualização do editor"
+      }
+    ],
+    "seccoes_note": [
+      {
+        "nome": "🏠︎ Local",
+        "descricao": "página principal da plataforma"
+      },
+      {
+        "nome": "🤝 Share",
+        "descricao": "página de compartilhamento de Arquivos Partilhados (🗄️). É possível criar um arquivo, ser o dono dele (👑 ) e partilhar com outros utilizadores; ou ser o utilizador que recebe o arquivo (🤝) para poder ver ou editar. Dentro desses Arquivos há um sistema de presença Live, ou seja, se dois ou mais utilizadores tiverem dentro do mesmo Arquivo partilhado, aparece uma barra de colaboração que mostra bolinhas coloridas com as iniciais dos utilizadores que estão a ler ou editar o Arquivo no mesmo momento"
+      },
+      {
+        "nome": "📌Pins",
+        "descricao": "página de indexação rápida de Ambientes e Pastas"
+      },
+      {
+        "nome": "🧳Bag",
+        "descricao": "página dentro de Pins que anexa todas as páginas-filhas da plataforma"
+      },
+      {
+        "nome": "⚡️Flash",
+        "descricao": "página de criação de ambiente de anotações (notas/jornais) de forma rápida"
+      }
+    ],
+    "seccoes_lists": [
+      {
+        "nome": "📑Tópicos",
+        "descricao": "secção de navegação que reune todos os Tópicos e subtópicos criados; possibilitanto a criação dos mesmos"
+      },
+      {
+        "nome": "🎨Destaques",
+        "descricao": "secção de navegação que reune todos os Destaques criados"
+      },
+      {
+        "nome": "📖Bíblia",
+        "descricao": "secção de visualização Bíblia Sagrada completa"
+      },
+      {
+        "nome": "📜Textos Bíblicos",
+        "descricao": "secção de navegação que reune os textos bíblicos em que o user tem anotações"
+      },
+      {
+        "nome": "🔖Marcadores",
+        "descricao": "exlcusivo para Lists>Bíblia, secção de navegação que reune todos os Marcadores criados; possibilitanto a criação dos mesmos; é possível criar uma descrição e assim diferenciar Marcadores com o mesmo nome"
+      },
+      {
+        "nome": "👤Personagens",
+        "descricao": "secção de navegação que reune todas as Personagens criadas; possibilitanto a criação dos mesmos"
+      },
+      {
+        "nome": "📍Locais",
+        "descricao": "secção de navegação que reune todos os Locais criados; possibilitanto a criação dos mesmos"
+      },
+      {
+        "nome": "📅Datas",
+        "descricao": "secção de navegação que reune todos as Datas criadas; possibilitanto a criação das mesmas"
+      },
+      {
+        "nome": "🪐Cosmos",
+        "descricao": "secção de navegação que reune todos os Assuntos criados"
+      },
+      {
+        "nome": "🏷️Tags",
+        "descricao": "secção de navegação que reune todos as Tags criadas"
+      },
+      {
+        "nome": "📔Livros",
+        "descricao": "secção de visualização de vários livros e publicações"
+      }
+    ],
+    "coluna_omnipresente": {
+      "ferramentas_gerais": [
+        {
+          "nome": "🔄 Refresh",
+          "descricao": "atualiza com os dados mais recentes da Plataforma"
+        },
+        {
+          "nome": "🔍Pesquisa Externa",
+          "descricao": "pesquisa o dado selecionado nessa coluna no site externo wol.jw.org"
+        },
+        {
+          "nome": "⚓Âncoras",
+          "descricao": "exlcusivo para Lists>Personagens, Locais, Datas, Cosmos); serve para enexar Âncoras já existentes ou criá-las"
+        },
+        {
+          "nome": "✏️Editar",
+          "descricao": "possibilidade de editar o Nome, Descrição e Emoji (quando existe a opção)"
+        },
+        {
+          "nome": "↕️Expandir",
+          "descricao": "expande ou colapsa todos os cards em \"❝ Citações\""
+        },
+        {
+          "nome": "📖Leitura Externa",
+          "descricao": "exclusivo Bíblia ou Textos Bíblico; abre uma página xterna para ler esse versículo noutro site"
+        },
+        {
+          "nome": "🎯Especificar",
+          "descricao": "exlcusivo para Lists>Livros; mostra na integra parágrafo, questão ou subtema selecionado"
+        }
+      ],
+      "seccoes_especificas": [
+        {
+          "nome": "🧩 Puzzle",
+          "descricao": "secção que engloba o Quadro. O Quadro é uma secção onde se pode anexar: texto comum com ou sem hiperligação (+Txt) e adicionar Caixas Conectoras (+Ref) - as Caixas Conectoras apenas aparecem se a palavra ou expressão que estiver aberta na Coluna Omnipresente🧿, estiver escrita dentro da Caixa ou anexada em \"Gestão de Fontes>Categorias\" da Caixa. Também há a opção de exportar o Quadro para uma Nota (📡), contruindo uma nota com todo o conteúdo de Quadro. Sempre que o conteúdo de uma Caixa Conectora anexada a esta secção for editada, ela será automaticamente modificada neste card"
+        },
+        {
+          "nome": "⚡Links",
+          "descricao": "secção onde se pode anexar hiperlkiugações da web (+Link) e referências manuais e detalhadas de publicações, livros ou multimédia (+ Codex)"
+        },
+        {
+          "nome": "📼 Dossié",
+          "descricao": "secção para organização de tópicos; com a criação de Micas o Dossié fica organizado e dentro de cada Mica poderá haver um texto bíblico associado (+Bíblia) e Caixas Conectoras (+Add) - as Caixas Conectoras apenas aparecem se a palavra ou expressão que estiver aberta na Coluna Omnipresente🧿, estiver escrita dentro da Caixa ou anexada em \"Gestão de Fontes>Categorias\" da Caixa. Sempre que o conteúdo de uma Caixa Conectora anexada a esta secção for editada, ela será automaticamente modificada neste card"
+        },
+        {
+          "nome": "❝ Citações",
+          "descricao": "aglomerado de todas as citações da presente expressão ou localização nos Ambientes de Anotação ou Pastas."
+        }
+      ]
+    },
+    "area_configuracoes": {
+      "itens": [
+        "Últimos itens editados (ultimos 5 itens a serem editados)",
+        {
+          "Sistema": "configurar algumas definições especificas",
+          "sub_opcoes": [
+            "Mostrar Título Completo de Entidade (se ativada, os títulos das Caixas Conectoras deixam de ser uma linha simples e passam a quebrar o texto para que o utilizador leia o título todo sem cortes)"
+          ]
+        },
+        "Reciclagem (ver itens ocultos)"
+      ]
+    },
+    "criacao": {
+      "ambiente_anotacoes": [
+        { "item": "📄Nota", "descricao": "para criar notas" },
+        { "item": "📰 Jornal", "descricao": "para critar notas" },
+        { "item": "🗄️Arquivo", "descricao": "para criar posts" },
+        { "item": "🪸Aquário", "descricao": "para criar texto em blocos (🌊 Ondas)" }
+      ],
+      "sub_anotacao": [
+        { "item": "🧬Agregação", "descricao": "ficheiro que agrega várias Caixas Conectoras em uma Nota" }
+      ],
+      "berco_ambientes": [
+        { "item": "📂Pasta", "descricao": "onde se coloca todos os ambientes de Anotações e sub-anotações" }
+      ]
+    },
+    "definicoes_externas": {
+      "📂Pasta": [
+        "a) Mudar Nome (mudar nome da pasta)",
+        "b) Adicionar Pin (para adicionar a pasta na secção de Note (📌Pins) para uma rápida navegação)",
+        "c) Proteger (proteger a pasta com uma palavra passe)",
+        "d) Mover de Posição (reordenar a posição da pasta na lista)",
+        "e) Mover de Pasta (mover a atual pasta para dentro de outra)",
+        "f) Anexar Tópico (anexar toda a pasta a tópicos ou subtópicos)",
+        "g) Tornar Superpasta (🗃️) (gera um espaço totalmente dedicado àquela pasta; é possível mudar o icon da Superpasta)",
+        "h) Ocultar Item (não elimina mas oculta a pasta)"
+      ],
+      "📄📰🗄️🪸": [
+        "a) os ambientes de anotação têm as mesmas opções à exepção da g - Superpasta (🗃️)"
+      ]
+    },
+    "definicoes_internas_ambientes": {
+      "🕓Histórico da Nota": [
+        "a) Backup (ver backups feitos e possibilidade de fazer um backup)",
+        "b) Reciclagem (Todos as Ferramentas de Criação e Caixas Conectoras lançadas na Lixeira vem para aqui para poderem ser restauradas posteriomente)",
+        "c) Histórico (informação de quando o Ambiente de Anotação foi criado, e quando as Ferramentas de Criação e Caixas Conectoras foram adicionadas a esse Ambiente."
+      ],
+      "📑Tópicos do Bloco": [
+        "a) 📑 Tópicos (anexar Tópicos e Subtópicos já existentes ou criá-los)",
+        "b) ⚓ Âncoras (anexar Âncoras já existentes ou criá-los)",
+        "c) 🏷️ Tags (procurar um tag no ambiente de anotação ou criá-la)",
+        "d) 〰 Associar (anexar outros Ambientes de Anotação a este, possibilitando abrir em popup (🌪️) o conteúdo (não editável) de qualquer Caixa Conectora que a Anotação anexada tem. Também possibilita navegar rapidamente (➔) para a Anotação anexada)"
+      ],
+      "🔐Partilha": [
+        "a) Link de Leitura (hiperligação partilhada para outro user ver/incorporar na sua conta; existe uma opção anexada e selecionada predefinidamente \"Todas as Subnotas, Questões etc...\" isto significa que todos os 🔐 Cadeados das Caixas Conectoras da atual Página serão ignorados, permitindo que o utilizador que receba este link partilhado veja o conteúdo de todas as Caixas)",
+        "b) Link de Colaboração (exclusivo da secção de Note \"🤝Share\" quando o user é dono do Arquivo; pode ser partilhada com outro user e esse passa a ter acesso e editar o Arquivo; o dono do Arquivo ainda tem acesso aos utilizadores que estão a aceder ao seu Arquivo e gerir o acesso)",
+        "c) Nenhum Link (exlusivo da secção de Note \"🤝Share\", quando o utilizador não é dono do Arquivo, o simbolo \"🔐\" não aparecerá)"
+      ]
+    },
+    "segunda_coluna_ambientes": {
+      "📂Pastas": "menu de navegação das pastas e ambientes de navegação",
+      "≔ Índice": "lista de rápida navegação a todas as Caixas Conectoras e Ferramentas de Criação inseridas na presente Anotação. À medida que o utilizador faz scroll na nota, o item correspondente no Índice fica destacado em azul, indicando a posição atual de leitura",
+      "📜Textos": {
+        "descricao": "quando é digitado um texto bíblico ou sequência de textos bíblicos na Anotação, são expostos esses textos numa lista, com título e a trascrissão dos mesmos.",
+        "abas": [
+          "a) 📜 Textos (aba exibe os textos bíblicos detetados na presente Aotação)",
+          "b) ⚓Navega (aba exibe conceitos criados em Lists e anexados à Coluna Omnipresente🧿 ; para ativar basta selecionar um conceito dentro do Ambiente de Anotação>Gestão da Nota>Âncoras)",
+          "c) 🛳️ Misto (aba foca-se na exibição de em ambos: textos bíblicos e conceitos; para ativar basta ativar a opção \"⚓ + 📜\" dentro do Ambiente de Anotação>Gestão da Nota>Âncoras)"
+        ]
+      },
+      "⚡Fontes": [
+        "a) 🔗Fontes (exibe as hiperligações gravadas dentro de todas as Caixas de Conexção nessa Anotação; ao clicar na hiperligação, acede ao linkl externo)",
+        "b) 📚Codex (exibe todos os Codex (referências manuais e detalhadas de publicações, livros ou multimédia) gravadas dentro de todas as Caixas de Conexção nessa Anotação; ao clicar na referência abrirá dentro da Coluna Omnipresente 🧿 (🎯) o exerto selecionado )"
+      ]
+    },
+    "ferramentas_criacao_especificas": {
+      "Nota": [
+        "☂️ - titulo toogle (gera uma caixa com um título e caixa de texto, em que o titulo é visivel mas a caixa de texto pode colapsar; também pode ser pintada com 6 cores)",
+        "ᯓ - texto arrastável (transforma o texto selecionado num texto de fácil transporte; pode arrastar parágrafos e, visualmente, criar pontos.",
+        "☑️- checklist (caixas de seleção que ficam preenchidas caso o user clique sobre elas)",
+        "― - linha de separação (uma barra que separa textos, tornando a separação visível)",
+        "🧮- tabela (gera uma tabela com uma caixa de opções: criar mais linhas e colunas)",
+        "📅 - mini-calendário (gera um pequeno calendário; é possível torná-lo em agenda se clicar num dos dias e criar um lembrete)",
+        "🌳- árvore cronológica (gera uma lista com Data e Eventos para formar uma linha vertical cronológica)",
+        "🤖- exportador de questões de sentinela (mecanismo que gera os títulos das perguntas de A Sentinela; é possível fazer isso manualmente (copiando todas as perguntas e colar na caixa de texto) ou automaticamente (selecionando a publicação preferida; dessa forma um conjunto de 📗Questões serão geradas)",
+        "🔬- Editor de Margem (página anexa, onde se pode editar as margens da folha)",
+        "🪁 - Modo visualização expandido (na versão PC ou Tablet, oculta a primeira e segunda coluna e deixa apenas a coluna da Nota em destaque)",
+        "🏗️ - Grua de referências (gera módulo onde se pode criar listas de assuntos e anexar links; perfeito para organização de links/artigos web)"
+      ],
+      "Jornal": [
+        "Todas as contidas nas Notas",
+        "⏸️ colunas (ferramente desenhada para adicionar duas caixas de texto uma ao lado da outra e visualmente criar duas colunas dentro de um card)",
+        "🖼️ Imagens (ferramenta desenhada para inserir links de imagem e assim gerar uma miniatura de imagem; é possível mudar a dimensão da imagem: pequena, média, grande, gigante)",
+        "🪧 caixa de raciocínio (ferramenta desenhada para introduzir linhas de racíocionio, com título, caixa de texto para abordar o tema e adicionar links; quando adicionada uma destas caixas, automaticamente fica disponível no menu flutuante de Jornal para adicionar mais rapidamente; ao adicionar mais de uma caixa, existe uma numeração \"#1... #2...\" para seguir essa linha de raciocionio ao longo da Anotação)",
+        "🪪 cartão temático (ferramenta desenhada para ser um cartão de visita ou de biografia; ideal para iniciar um novo tópico ou criar um biografia de alguém. Cotém zona para adicionar link de imagem, título e detalhes. Visualmente apelativo)",
+        "🧊 bloco movivel (ferramenta de texto desenhada para ser arrastável e maleável. É possível manipular a sua largura e posição)"
+      ],
+      "Arquivo": [
+        "🚪Gavetões (secçõão para adicionar Posts e gavetas; bom para organizar posts)",
+        "🎛️Gavetas (secção para organizar posts)",
+        "❤️Likes (ferramenta para favoritas posts)",
+        "🤍Favoritos (secção que filtra todos os posts favoritados pelo utilizador)"
+      ],
+      "Aquário": [
+        "Todas as contidas nas Notas",
+        "🪼Menu Lateral (menu exlusivo para Aquário onde se encontrar Lists, a Coluna dos Ambientes de Anotação e 🐚 Armazém)",
+        {
+          "🐚 Armazém (submenu dedicado a guardar anotações de estudo)": [
+            "a)🗒️Anotação Global (secção para criar pequenas anotações em card, com a possibilidade de ficar no modo checklists e popup, sendo possível anexar vários links)",
+            "b)🫧Concha (secção para criar Conchas e dentro delas adicionar: \"+ SubConcha\", \"+ Nota\", \"+ Vídeo\", \"+ Img\")",
+            "c)🎐Conchas Anexas (secção onde junta a lista de todas as 🐚 adicionadas diretamente das 🌊 Ondas)",
+            "d)📷Multimédia (secção para adicionar link de \"+ Imagem\" e \" + Vídeo\" aparecendo uma miniatura de pré-visualização)",
+            "e)🦑 Conchas Partilhadas (as Conchas criadas nesta secção, são partilhadas com todos os Aquários, ou seja, se for adicionado algo no Aquário 1, poderá ser visto no Aquário 2,3, etc...)"
+          ]
+        }
+      ]
+    },
+    "ferramentas_escrita_visualizacao": {
+      "Escrita": [
+        "Bold (tornar o texto negrito com 6 cores disponíveis; para aceder a essas cores o utilizador tem de clicar em \"••\" ao lado do B)",
+        "Itálico (tornar o texto itálico com 6 cores disponíveis; para aceder a essas cores o utilizador tem de clicar em \"••\" ao lado do I)",
+        "Sublinhado (tornar o texto sublinhado levemente)",
+        "Títulos H1, H2, H3 (tornar texto normal em títulos)"
+      ],
+      "Visualização": [
+        "Zoom Dinâmico (tornar o texto mais pequeno ou maior em percentagem (50% a 180%) alterando o tamanho visual do texto)."
+      ],
+      "Avancadas": [
+        "📒Post-it (transforma textgo selecionado em um Post-it arrastável, pode ser colocado em qualquer cordenada do Ambiente ; também pode ser criado diretamente do Painel Flutuante, e nesse caso poderá ser escolhido 3 tamanhos (pequeno, médio, grande), sendo possível escrever e arrastar. Quando é cortado (✂️) o texto dentro do Post-it vai para a caixa de texto da Anotação.",
+        "💡Ideias (muda a cor de fundo do texto selecionado para vermelho; ao selecionar nesse vermelho, existe a opção íman (🧲) que possíbilita enviar aquela Ideia para um outro Ambiente de Anotação que existe dentro daquela Pasta. Útil para quem quer juntar ideias rápidamente num só lugar. Também existe a opção desvincular ideia (✂️), o texto deixa de estar vermelho (mas caso já tenha enviado essa ideia para outro Ambiente de Anotação, essa ideia permanece lá).",
+        "🎴Cartão Web (transforma um link selecionado num cartão visual com imagem de capa, título e domínio)",
+        {
+          "🔗Anexar Fontes": [
+            "a) 🔗Links (depósito de referências, com título e multiplas caixas para hiperligações)",
+            "b) 🖇️SuperLink (ligação interna bidirecional. Conecta uma frase (Origem) a outra frase (Destino) dentro da mesma anotação)."
+          ]
+        }
+      ]
+    },
+    "caixas_conectoras": {
+      "descricao": "o coração da plataforma. Através desta caixas, todo o texto fica conectado entre Caixas, Lists, páginas-filho e Coluna Omnipresente 🧿",
+      "tipos": [
+        {
+          "nome": "📘SubNota",
+          "descricao": "caixa desenhada para servir como subtópico, resumo, ponto-chave, palestra etc..."
+        },
+        {
+          "nome": "📗Questão",
+          "descricao": "caixa desenhada para servir para colocar perguntas, dilemas, hipóteses, paradoxos, e as respetivas respostas"
+        },
+        {
+          "nome": "📙Contentor",
+          "descricao": "caixa desenhada para colocar pensamentos, reflexões, transcrições, rascunhos, exemplos, ou simplesmente, ser um substítuto de escrever diretamente na Anotação da página"
+        },
+        {
+          "nome": "📕Consultor",
+          "descricao": "caixa desenhada para pesquisa. No início é possível selecionar as fontes de pesquisa (🀦 Bíblia, 🀩 Livros, 🀧 Publicações, 🀨 Caixas Conectoras anexas a esta caixa através de ⚡️Gestão de Conexões>〰 Associar). Há medida que a pesquisa é efetuada, aparecem os resultados correspondentes das fontes de pesquisa ativa no \"painel de pesquisa\". É possível ver os resultados para cada secção de pesquisa. Também é possível fazer esse painel um popup (🀄) ou então ocultá-lo (X) momentaneamente. A qualquer altura pode ser adicionado ou removido um filtro da pesquisa. Além disso, é possível adicionar um subtítulo (▼) - além de um título)"
+        },
+        {
+          "nome": "📓Redator",
+          "descricao": "exclusivo de Jornal; caixa desenhada para ser visualmente mais leve e mais focado em Anotações com vários textos sobre o mesmo tema. Desenhado também para ser uma caixa sem distrações, com um design mais minimalista, por exemplo, todas as Funcionalidade da Caixa ficam dentro de \"⋮\". Além disso, caso o utilizador apenas opte por escrever na zona do texto e não preencher o título da caixa, esse titulo colapsa e fica oculto (podendo ser posteriormente exibido clicando num \"T\"). Além disso, anexo à caixa mas em baixo, existem dois icons: ⇖ para tornar aquela caixa um popup (não editável; e assim navegar com ela ao longo da página, analisá-la enquanto escreve noutra, por exemplo), e + para adicionar mais uma caixa Redator em baixo)"
+        },
+        {
+          "nome": "🌊 Onda",
+          "descricao": "exclusivo de Aquário; caixa desenhada para substituir a zona de texto, por isso, é indistinguível dessa zona. Possuí as mesmas funcionalidades das outras Caixas e mais uma exclusiva (todas elas localizadas na barra do topo e não dentro da caixa). É uma caixa que possuí na lateral icons: ▲▼ para mover a Caixa entre as Caixas, e + para adicionar mais uma caixa Onda, aliás é a única forma de adicionar caixas neste Ambiente. E ainda mais dois: ⇖ para tornar aquela caixa um popup (editável; e assim navegar com ela ao longo da página, analisá-la enquanto escreve noutra, por exemplo), e 🐚para gerar uma pequena nota na aba \"🐚\" do menu exclusivo Medusa (🪼) de Aquário)"
+        }
+      ]
+    },
+    "funcionalidade_caixas_conectoras": [
+      {
+        "nome": "🗑️ Lixeira",
+        "descricao": "A atual caixa poderá ser ocultada e enviada para Anotação>Histórico da Nota>Recilagem"
+      },
+      {
+        "nome": "📋 Tópicos",
+        "sub_opcoes": [
+          "a)📑 Tópicos (anexar Tópicos e Subtópicos já existentes ou criá-los)",
+          "b) 🏷️ Tags (Verificar se no texto há alguma palavra que seja um tag e adicioná-la para ser anexada à secção de navegação 🏷️Tags)"
+        ]
+      },
+      {
+        "nome": "🎨 Personalizar",
+        "sub_opcoes": [
+          "a) 🎨Destaques (pinta o fundo do texto da atual Caixa da cor selecionada. Existem 9 cores, cada uma delas inicia com o nome da cor, porém, o utilizador poderá mudar o nome para o Destaque que pretendes, exemplo: \"Feito\", \"Por fazer\", \"Pesquisar mais\", \"Comentar\" etc..., essas cores vão ser exibidar na página-filha externa, Book)",
+          "b) 🎭 Foco (muda a cor da Caixa inteira. Cada Caixa Conectora (com exepção de Redator e Onda) tem os seus próprios focos, que podem ser útil para facilmente distinguir do que a Caixa trata)"
+        ]
+      },
+      {
+        "nome": "🧬 Migrar (Enviar para...)",
+        "sub_opcoes": [
+          "a) 🪞Cópia (envia uma cópia desta Caixa para outra Anotação. Ao criar uma cópia, tudo o que for escrito na cópia não afetará o Original, nem o que se escreevr no Original afetará na cópia. Além disso, a Cópia fica com um estado ativo (👽) e o Original (⚗️) também para distinguir ambas as Caixas)",
+          "b)🗿 Card (envia um card desta Caixa para outra Anotação. Esse card será como uma estátua (🗿), não poderá ser editado diretamente no card, e o card atualiza automáticamente sempre que a Anotação é aberta, assim, se o Original for mudado, o card é mudado também. É possível adicionar um Destaque (🎨) ao card e viajar até à Caixa Original através do botão 🗿)"
+        ]
+      },
+      {
+        "nome": "⚡️Gestão de Conexões",
+        "sub_opcoes": [
+          "a) 🧷Referências (depósito de referências referentes ao conteúdo da atual Caixa, com título e multiplas caixas para hiperligações)",
+          "b) 📚 Codex (referências manuais e detalhadas de publicações, livros ou multimédia, referentes ao conteúdo da atual Caixa)",
+          "c) 🗒️ Categorias (anexa a Caixa na Coluna Omnipresente🧿; se na Coluna Omnipresente navegar por \"Noé\" e querer que esta Caixa possa ser anexada a essa Personagem, mas a palavra \"Noé\" não se encontra escrita na Caixa, então é possível adicionar essa expressão ou palavra nesta aba. Também é possível fazer mesmo com versículos bíblicos, ativando a opção \"Procurar na Bíblia\"). Desta forma, mesmo que não haja a palavra ou expressão procurada escrita dentro das Caixas, essa Caixa será encontrada dentro do 🧩 (+Ref) e 📼 (+Add) na Coluna Omnipresente)",
+          "d) 〰 Associar (anexa outras Caixas após a anexação do ID de outras Caixas ; sendo possível gerar um popup (🛩️) de todas as Caixas anexadas à atual Caixa)"
+        ]
+      },
+      "🔺🔻 Mover subir/baixar (move a Caixa entre textos e outras Caixas ou Ferramentas)",
+      "🔐 Cadeado (protege (🔐) ou liberta (🔓) a atual Caixa aquando a Página é partilhada; caso a partilha seja feita com a opção \"Todas as Subnotas, Questões etc...\" desligada e o cadeado da caixa esteja fechado, então, o user que receber o link partilhado, não poderá ver o conteúdo desta Caixa.",
+      "☄︎ (exclusivo de Aquário, tornar um bloco de texto em títulos: H1, H2, parágrafo, subparágrafo ou Nota)"
+    ],
+    "estados_caixas_conectoras": [
+      {
+        "nome": "🛰️Conectado",
+        "descricao": "icon que é exibido no canto superior direito do painel \" Gestão de Fontes (⚡️)\", quando a caixa está associada a algum tema na Coluna Omnipresente. Permite assim não duplicar anexação a essa coluna."
+      },
+      {
+        "nome": "⚗️Original",
+        "descricao": "icon que é exibido no canto superior direito do painel \" Gestão de Fontes (⚡️)\", quando é criada uma cópia (🧬) para outra Anotação, para identificar que esta é a Caixa Original e que há um ou mais clones espalhados pela Plataforma e identificar quais são"
+      },
+      {
+        "nome": "👽 Clonado",
+        "descricao": "icon que é exibido no canto superior direito do painel \" Gestão de Fontes (⚡️)\", quando é criada uma cópia (🧬) para outra Anotação, para identificar que esta é um clone e que há uma Caixa Original na Plataforma e identificar qual é"
+      }
+    ],
+    "sistemas_conexao": {
+      "📑Tópicos": "lista de tópicos e subtópicos para anexar com a secção de Lists \"📑 Tópicos\". Útil para rapidamente pesquisar entre Anotações ou Caixasquele tópico ou subtópico em particular.",
+      "⚓Âncoras": {
+        "descricao": "lista de Palavras ou Expressões para serem ancoradas em Anotações e que influencia diretamente: a 2ª Coluna do Ambiente de Anotações",
+        "logica": [
+          "a) Enquanto nenhuma palavra está ancorana dentro do Ambiente de Anotação, então na 2ª Coluna aparece \"📜Textos\" e vai pesquisar qualquer texto ou sequência de textos bíblicos presentes ao longo da atual Anotação.",
+          "b) Selecionar uma palavra no painel \"Gestão da Nota>ªAncoras\", significa que o utilizador deseja transformar aquele 📜 em \"⚓ Navega\", ou seja, deseja tornar a pesquisa com temas mais variados e seculares. Nesta opção os textos bíblicos deixam de aparecer e apenas surgem pesquisas a palavras que foram selecionadas.",
+          "c) Selecionar a opção \"⚓ + 📜\" transformará essa aba em \"🛳️Misto\" onde palavras selecionadas e textos bíblicos irão surgir em conjunto."
+        ],
+        "nota_adicional": "Todas as pesquisas têm ligação à Coluna Omnipresente."
+      },
+      "🏷️Tags": "lista de Palavras que se interligam com Caixas de Conexção ou ao texto das Anotações; desta forma é mais fácil encontrar por tags manualmente colocados em Caixas ou em alguma palavra ao longo da Plataforma",
+      "〰 Associar": {
+        "descricao": "cada Caixa e Ambiente de Anotações tem um ID próprio, por sua vez, cada Caixa e Ambiente de Anotações tem o seu leitor de ID´s; colar o ID pode conectar os elementos",
+        "aplicacao": [
+          "a) Ambiente de Anotações (após colar o ID anexa outros Ambientes de Anotação a este, possibilitando abrir em popup (🌪️) o conteúdo (não editável) de qualquer Caixa Conectora que a Anotação anexada tem)",
+          "b) Caixas Conectoras (após colar o ID anexa anexa outras Caixas Conectoras a esta, possibilitando abrir um popup (🛩️) com o conteúdo (não editável) da Caixa Conectora anexada. Além disso, é possível conectar o ID de uma Anotação, o que anexa todas as Caixas Conectoras que a Anotação anexada tem)"
+        ]
+      }
+    }
+  }
+}
