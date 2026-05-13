@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Oficial NotaBook - Documentação Completa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f0f11;
+            --sidebar-bg: #16161a;
+            --card-bg: #1c1c21;
+            --accent: #4a90e2;
+            --text-main: #f0f0f0;
+            --text-muted: #a0a0a0;
+            --border: #2d2d33;
+            
+            /* Cores de Identidade */
+            --subnota-blue: #4a90e2;
+            --questao-green: #2ecc71;
+            --contentor-orange: #e67e22;
+            --consultor-red: #e74c3c;
+            --redator-dark: #555;
+            --onda-cyan: #1abc9c;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--text-main); display: flex; height: 100vh; overflow: hidden; }
+
+        /* --- SIDEBAR --- */
+        #sidebar {
+            width: 320px;
+            background-color: var(--sidebar-bg);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+        }
+
+        .sidebar-header { padding: 20px; border-bottom: 1px solid var(--border); }
+        .sidebar-header h1 { font-size: 1.1rem; font-weight: 800; color: var(--accent); display: flex; align-items: center; gap: 10px; }
+        #search-input { width: 100%; padding: 10px; margin-top: 15px; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; color: white; outline: none; font-size: 0.85rem; }
+
+        .nav-menu { flex: 1; overflow-y: auto; padding: 15px; }
+        .nav-group { margin-bottom: 25px; }
+        .nav-group-title { font-size: 0.65rem; text-transform: uppercase; color: var(--accent); font-weight: 800; margin-bottom: 8px; letter-spacing: 1.2px; padding-left: 10px; }
+        .nav-item { padding: 8px 12px; font-size: 0.85rem; cursor: pointer; border-radius: 6px; color: var(--text-muted); display: block; text-decoration: none; transition: 0.2s; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .nav-item:hover { background: rgba(255,255,255,0.05); color: white; }
+        .nav-item.active { background: rgba(74, 144, 226, 0.15); color: var(--accent); font-weight: 600; }
+
+        /* --- CONTEÚDO --- */
+        #content { flex: 1; overflow-y: auto; padding: 60px 80px; scroll-behavior: smooth; }
+        .section-anchor { margin-bottom: 80px; }
+        .section-title { font-size: 2rem; font-weight: 800; margin-bottom: 10px; }
+        .section-subtitle { color: var(--text-muted); margin-bottom: 40px; font-size: 1rem; }
+
+        /* --- GRID DE CARDS --- */
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 20px; position: relative; }
+        .card:hover { border-color: #444; }
+        .card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+        .card-title { font-weight: 700; font-size: 1rem; color: #fff; }
+        .card-tag { font-size: 0.65rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; background: rgba(255,255,255,0.05); color: var(--text-muted); }
+        .card-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
+        
+        /* Tipos de Caixas */
+        .subnota-card { border-left: 4px solid var(--subnota-blue); }
+        .questao-card { border-left: 4px solid var(--questao-green); }
+        .contentor-card { border-left: 4px solid var(--contentor-orange); }
+        .consultor-card { border-left: 4px solid var(--consultor-red); }
+        .redator-card { border-left: 4px solid var(--redator-dark); }
+        .onda-card { border-left: 4px solid var(--onda-cyan); }
+
+        .feature-list { margin-top: 10px; padding-left: 18px; list-style-type: square; color: var(--text-muted); font-size: 0.8rem; }
+        .feature-list li { margin-bottom: 5px; }
+
+        @media (max-width: 1024px) { #content { padding: 40px; } }
+        @media (max-width: 768px) { body { flex-direction: column; } #sidebar { width: 100%; height: 300px; } }
+    </style>
+</head>
+<body>
+
+<aside id="sidebar">
+    <div class="sidebar-header">
+        <h1><span>🧿</span> NotaBook Manual</h1>
+        <input type="text" id="search-input" placeholder="Filtrar funcionalidades...">
+    </div>
+    <nav class="nav-menu" id="nav-menu"></nav>
+</aside>
+
+<main id="content">
+    <div id="main-render"></div>
+</main>
+
+<script>
+    const manualData = {
+        "Navegação Principal": {
+            "sub": "Aba Navegadora da Plataforma e Secções principais",
+            "items": [
+                { "t": "Note", "d": "Interface central de criação de conteúdo." },
+                { "t": "Lists", "d": "Motor de navegação entre conteúdos estruturados." },
+                { "t": "Book", "d": "Página externa de visualização otimizada do editor." },
+                { "t": "🏠︎ Local", "d": "Página principal da plataforma.", "cat": "Note" },
+                { "t": "🤝 Share", "d": "Partilha de Arquivos Partilhados (🗄️). Inclui sistema de presença Live com indicadores visuais de quem está a ler/editar no momento.", "cat": "Note" },
+                { "t": "📌 Pins", "d": "Indexação rápida para Ambientes e Pastas favoritas.", "cat": "Note" },
+                { "t": "🧳 Bag", "d": "Localizada dentro de Pins, anexa todas as páginas-filhas da plataforma.", "cat": "Note" },
+                { "t": "⚡ Flash", "d": "Criação ultra-rápida de ambientes de anotação.", "cat": "Note" }
+            ]
+        },
+        "Aba Lists": {
+            "sub": "Organização e Biblioteca",
+            "items": [
+                { "t": "📑 Tópicos", "d": "Navegação por tópicos e subtópicos criados pelo utilizador." },
+                { "t": "🎨 Destaques", "d": "Reúne todos os elementos marcados com cores específicas." },
+                { "t": "📖 Bíblia", "d": "Visualização completa da Bíblia Sagrada." },
+                { "t": "📜 Textos Bíblicos", "d": "Reúne textos específicos onde o user possui anotações." },
+                { "t": "🔖 Marcadores", "d": "Gestão de marcadores exclusivos da Bíblia com descrições diferenciadas." },
+                { "t": "👤 Personagens", "d": "Navegação e criação de perfis de personagens." },
+                { "t": "📍 Locais", "d": "Base de dados de localizações geográficas." },
+                { "t": "📅 Datas", "d": "Linhas temporais e registos cronológicos." },
+                { "t": "🪐 Cosmos", "d": "Secção de navegação para Assuntos e temas gerais." },
+                { "t": "🏷️ Tags", "d": "Indexação por palavras-chave (#)." },
+                { "t": "📔 Livros", "d": "Biblioteca de publicações e livros." }
+            ]
+        },
+        "Coluna Omnipresente🧿": {
+            "sub": "Ferramentas de acesso global",
+            "items": [
+                { "t": "🔄 Refresh", "d": "Atualização de dados em tempo real." },
+                { "t": "🔍 Pesquisa Externa", "d": "Pesquisa direta no site externo wol.jw.org." },
+                { "t": "⚓ Âncoras", "d": "Anexação de âncoras para Personagens, Locais, Datas e Cosmos." },
+                { "t": "✏️ Editar", "d": "Edição de Nome, Descrição e Emoji da entidade aberta." },
+                { "t": "↕️ Expandir", "d": "Controlo global de colapso de cards de citações." },
+                { "t": "🎯 Especificar", "d": "Visualização na íntegra de parágrafos ou questões de Livros." },
+                { "t": "🧩 Puzzle", "d": "O Quadro da plataforma. Permite anexar texto (+Txt) e Caixas Conectoras (+Ref). Possibilita exportação para Nota (📡). Sincronização automática de conteúdo editado." },
+                { "t": "⚡ Links", "d": "Anexação de hiperligações web (+Link) e referências detalhadas de publicações (+Codex)." },
+                { "t": "📼 Dossié", "d": "Organização avançada com Micas, Textos Bíblicos (+Bíblia) e Caixas (+Add)." },
+                { "t": "❝ Citações", "d": "Aglomerado histórico de citações da expressão selecionada." }
+            ]
+        },
+        "Ambientes de Criação": {
+            "sub": "Tipos de documentos e organização",
+            "items": [
+                { "t": "📄 Nota", "d": "Ambiente padrão para criação de notas.", "type": "subnota" },
+                { "t": "📰 Jornal", "d": "Ambiente otimizado para escrita diária/estudo.", "type": "subnota" },
+                { "t": "🗄️ Arquivo", "d": "Focado em posts e partilha.", "type": "subnota" },
+                { "t": "🪸 Aquário", "d": "Criação de texto em blocos (🌊 Ondas).", "type": "subnota" },
+                { "t": "🧬 Agregação", "d": "Ficheiro especial que agrega várias Caixas Conectoras numa única Nota." },
+                { "t": "📂 Pasta", "d": "Berço organizador de ambientes e sub-anotações." }
+            ]
+        },
+        "Configurações e Definições": {
+            "sub": "Gestão e Personalização",
+            "items": [
+                { "t": "⚙️ Sistema", "d": "Definições como 'Mostrar Título Completo de Entidade' (quebra de linha nos títulos das caixas)." },
+                { "t": "🗑️ Reciclagem", "d": "Visualização e restauro de itens ocultos ou apagados." },
+                { "t": "🕓 Histórico", "d": "Acesso a Backups, Lixeira de ferramentas e linha do tempo de criação da nota." },
+                { "t": "📂 Gestão de Pasta", "d": "Opções: Mudar Nome, Adicionar Pin, Proteger (PW), Mover de Posição/Pasta, Anexar Tópico, Superpasta (🗃️) e Ocultar." },
+                { "t": "🔐 Partilha", "d": "Opções: Link de Leitura (com bypass de cadeados), Link de Colaboração (exclusivo Share) e Nenhum Link." }
+            ]
+        },
+        "Ferramentas de Criação": {
+            "sub": "Componentes inseríveis nos ambientes",
+            "items": [
+                { "t": "☂️ Título Toggle", "d": "Caixa expansível colorida para organização de texto.", "cat": "Nota" },
+                { "t": "ᯓ Texto Arrastável", "d": "Transforma parágrafos em blocos de fácil transporte.", "cat": "Nota" },
+                { "t": "🧮 Tabela", "d": "Geração dinâmica de tabelas com controlo de linhas/colunas.", "cat": "Nota" },
+                { "t": "📅 Calendário", "d": "Mini-calendário com sistema de agenda e lembretes.", "cat": "Nota" },
+                { "t": "🌳 Árvore", "d": "Geração de linha vertical cronológica.", "cat": "Nota" },
+                { "t": "🤖 Sentinela", "d": "Exportador automático de títulos de perguntas de A Sentinela.", "cat": "Nota" },
+                { "t": "🏗️ Grua", "d": "Módulo para criação de listas de assuntos e links web.", "cat": "Nota" },
+                { "t": "⏸️ Colunas", "d": "Ferramenta para criar duas colunas de texto lado a lado.", "cat": "Jornal" },
+                { "t": "🖼️ Imagens", "d": "Inserção de links de imagem com redimensionamento dinâmico.", "cat": "Jornal" },
+                { "t": "🪧 Raciocínio", "d": "Caixas numeradas (#1, #2...) para estruturação de lógica e links.", "cat": "Jornal" },
+                { "t": "🪪 Cartão", "d": "Cartão temático apelativo para biografias ou introduções.", "cat": "Jornal" },
+                { "t": "🐚 Armazém", "d": "Submenu exclusivo do Aquário (🪼): Anotação Global, Conchas, Multimédia e Conchas Partilhadas.", "cat": "Aquário" }
+            ]
+        },
+        "Caixas Conectoras": {
+            "sub": "O coração da conectividade",
+            "items": [
+                { "t": "📘 SubNota", "d": "Desenhada para subtópicos, resumos e pontos-chave.", "type": "subnota" },
+                { "t": "📗 Questão", "d": "Específica para dilemas, perguntas e hipóteses.", "type": "questao" },
+                { "t": "📙 Contentor", "d": "Espaço para reflexões, rascunhos e transcrições.", "type": "contentor" },
+                { "t": "📕 Consultor", "d": "Poderosa ferramenta de pesquisa (Bíblia, Livros, Pubs, Associações) com painel de resultados e popups (🀄).", "type": "consultor" },
+                { "t": "📓 Redator", "d": "Design minimalista para Jornal, com suporte a popup (⇖) e adição rápida (+).", "type": "redator" },
+                { "t": "🌊 Onda", "d": "Exclusiva de Aquário. Blocos de texto movíveis com suporte a notas no Armazém (🐚).", "type": "onda" }
+            ]
+        },
+        "Funcionalidades das Caixas": {
+            "sub": "Ações internas das caixas conectoras",
+            "items": [
+                { "t": "🗑️ Lixeira", "d": "Oculta a caixa e envia para a reciclagem da nota." },
+                { "t": "🎨 Destaques", "d": "Pintura do fundo com 9 cores personalizáveis (ex: 'Feito', 'Comentar')." },
+                { "t": "🎭 Foco", "d": "Muda a cor da caixa inteira para distinção temática." },
+                { "t": "🪞 Cópia", "d": "Clonagem ativa (👽/⚗️) para outra nota (independente)." },
+                { "t": "🗿 Card", "d": "Vínculo estático que atualiza automaticamente se o original mudar." },
+                { "t": "🖇️ SuperLink", "d": "Ligação interna bidirecional entre frases na mesma anotação." },
+                { "t": "🗒️ Categorias", "d": "Vínculo forçado à Coluna Omnipresente🧿 mesmo que a palavra não esteja escrita." },
+                { "t": "🔐 Cadeado", "d": "Controlo de privacidade individual para partilhas públicas." },
+                { "t": "🛰️ Conectado", "d": "Estado visual indicando associação ativa à Coluna Omnipresente." }
+            ]
+        }
+    };
+
+    const navMenu = document.getElementById('nav-menu');
+    const mainRender = document.getElementById('main-render');
+
+    function renderManual() {
+        let navHtml = '';
+        let contentHtml = '';
+
+        Object.entries(manualData).forEach(([sectionTitle, sectionData], idx) => {
+            const sectionId = `section-${idx}`;
+            
+            navHtml += `<div class="nav-group"><div class="nav-group-title">${sectionTitle}</div>`;
+            
+            contentHtml += `
+                <section class="section-anchor" id="${sectionId}">
+                    <h2 class="section-title">${sectionTitle}</h2>
+                    <p class="section-subtitle">${sectionData.sub}</p>
+                    <div class="card-grid">
+            `;
+
+            sectionData.items.forEach(item => {
+                const itemID = item.t.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase();
+                navHtml += `<a href="#${itemID}" class="nav-item">${item.t}</a>`;
+                
+                contentHtml += `
+                    <div class="card ${item.type ? item.type + '-card' : ''}" id="${itemID}">
+                        <div class="card-header">
+                            <span class="card-title">${item.t}</span>
+                            ${item.cat ? `<span class="card-tag">${item.cat}</span>` : ''}
+                        </div>
+                        <div class="card-desc">${item.d}</div>
+                    </div>
+                `;
+            });
+
+            contentHtml += `</div></section>`;
+            navHtml += `</div>`;
+        });
+
+        navMenu.innerHTML = navHtml;
+        mainRender.innerHTML = contentHtml;
+    }
+
+    // Busca e Filtro
+    document.getElementById('search-input').addEventListener('input', (e) => {
+        const term = e.target.value.toLowerCase();
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            const text = card.innerText.toLowerCase();
+            card.style.display = text.includes(term) ? 'block' : 'none';
+        });
+        
+        // Esconde secções vazias
+        document.querySelectorAll('.section-anchor').forEach(section => {
+            const hasVisibleCards = Array.from(section.querySelectorAll('.card')).some(c => c.style.display !== 'none');
+            section.style.display = hasVisibleCards ? 'block' : 'none';
+        });
+    });
+
+    renderManual();
+</script>
+
+</body>
+</html>
